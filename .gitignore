@@ -42,3 +42,4 @@ testem.log
 /typings
 
 # System Files
+.firebase/
