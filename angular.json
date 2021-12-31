@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo-app": {
+    "angular-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "demo-app:build:production"
+              "browserTarget": "angular-demo:build:production"
             },
             "development": {
-              "browserTarget": "demo-app:build:development"
+              "browserTarget": "angular-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo-app:build"
+            "browserTarget": "angular-demo:build"
           }
         },
         "test": {
@@ -142,12 +142,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "demo-app:build:development",
-              "serverTarget": "demo-app:server:development"
+              "browserTarget": "angular-demo:build:development",
+              "serverTarget": "angular-demo:server:development"
             },
             "production": {
-              "browserTarget": "demo-app:build:production",
-              "serverTarget": "demo-app:server:production"
+              "browserTarget": "angular-demo:build:production",
+              "serverTarget": "angular-demo:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -161,12 +161,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo-app:build:production",
-              "serverTarget": "demo-app:server:production"
+              "browserTarget": "angular-demo:build:production",
+              "serverTarget": "angular-demo:server:production"
             },
             "development": {
-              "browserTarget": "demo-app:build:development",
-              "serverTarget": "demo-app:server:development"
+              "browserTarget": "angular-demo:build:development",
+              "serverTarget": "angular-demo:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -174,5 +174,5 @@
       }
     }
   },
-  "defaultProject": "demo-app"
+  "defaultProject": "angular-demo"
 }

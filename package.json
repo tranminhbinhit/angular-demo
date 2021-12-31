@@ -8,7 +8,7 @@
     "build:ssr:prod": "ng build --prod && ng run universal:server:production && yarn compile:server",
     "serve:ssr": "node dist/apps/universal/server"
   },
-  "name": "demo-app",
+  "name": "angular-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -17,10 +17,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run demo-app:serve-ssr",
-    "serve:ssr": "node dist/demo-app/server/main.js",
-    "build:ssr": "ng build && ng run demo-app:server",
-    "prerender": "ng run demo-app:prerender"
+    "dev:ssr": "ng run angular-demo:serve-ssr",
+    "serve:ssr": "node dist/angular-demo/server/main.js",
+    "build:ssr": "ng build && ng run angular-demo:server",
+    "prerender": "ng run angular-demo:prerender"
   },
   "private": true,
   "dependencies": {
