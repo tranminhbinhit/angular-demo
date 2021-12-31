@@ -1,0 +1,28 @@
+<meta property="og:image" content="{{restaurant.ImageUrl | cdnUrl}}">
+
+<h2>{{restaurant.RestaurantName}}</h2>
+<p>Địa chỉ: {{restaurant.RestaurantAddress}}</p>
+<img [src]="restaurant.ImageUrl | cdnUrl" alt="{{restaurant.RestaurantName}}" class="src" style="width: 120px;">
+<hr />
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Món</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of restaurant.ListDishs">
+      <th scope="row">
+        <img src="{{item.ImageUrl | cdnUrl}}" alt="{{item.DishName}}" class="src" style="width: 120px;">
+      </th>
+      <td>
+          {{item.DishName}}
+      </td>
+      <td>
+          {{item.Price}}
+      </td>
+    </tr>
+  </tbody>
+</table>

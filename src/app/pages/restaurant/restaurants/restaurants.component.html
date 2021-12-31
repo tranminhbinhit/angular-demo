@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nhà hàng</th>
+      <th scope="col">Địa chỉ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of listRestaurant">
+      <th scope="row">{{item.RestaurantId}}</th>
+      <td>
+        <a [routerLink]="['/restaurants', item.RestaurantId]">
+          {{item.RestaurantName}}
+        </a>
+      </td>
+      <td>{{item.RestaurantAddress}}</td>
+    </tr>
+  </tbody>
+</table>

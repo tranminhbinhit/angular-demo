@@ -1,0 +1,28 @@
+<p>Loading</p>
+<button (click)="onLoading()">Loading 1s</button>
+<p>Notification</p>
+<button (click)="onNotificationSuccess()">Success</button>
+<button (click)="onNotificationError()">Error</button>
+<button (click)="onNotificationWarning()">Warning</button>
+
+<p>Select</p>
+<section>
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
+
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<br />
+<input type="text" [(ngModel)]="inputValue" (ngModelChange)="onChangeInputValue()">
+<div>
+  <ul>
+    <li *ngFor="let item of listSuggetInput">{{item}}</li>
+  </ul>
+</div>
