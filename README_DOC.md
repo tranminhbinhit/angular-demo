@@ -53,3 +53,7 @@
   "maximumError": "5mb"
   ```
   ## 5. Public source lên firebase
+  https://www.tiepphan.com/angular-trong-5-phut-deploy-angular-application-firebase-hosting/
+  Tạo tài khoản firebase 
+  https://console.firebase.google.com/project/angular-demo-72618/hosting/sites
+
