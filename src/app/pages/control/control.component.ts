@@ -48,7 +48,12 @@ export class ControlComponent implements OnInit {
   }
 
   onChangeInputValue(){
-    this.listSuggetInput = suggetValueRange(this.inputValue).slice(0,5);
+    this.listSuggetInput = suggetValueRange(this.inputValue).filter((m:number) => m != this.inputValue).slice(0,5);
+  }
+
+  onChooseInputValue(item: number){
+    this.inputValue = item;
+    this.onChangeInputValue();
   }
 
 }

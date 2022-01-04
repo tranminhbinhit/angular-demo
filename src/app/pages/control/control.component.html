@@ -22,7 +22,9 @@
 <br />
 <input type="text" [(ngModel)]="inputValue" (ngModelChange)="onChangeInputValue()">
 <div>
-  <ul>
-    <li *ngFor="let item of listSuggetInput">{{item}}</li>
+  <ul style="list-style-type: none; padding: 0px;">
+    <li *ngFor="let item of listSuggetInput" style="display: inline-block; margin-right: 2px;">
+      <button style="padding: 5px 10px; " (click)="onChooseInputValue(item)">{{item}}</button>
+    </li>
   </ul>
 </div>
