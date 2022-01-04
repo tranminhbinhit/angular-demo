@@ -43,3 +43,4 @@ testem.log
 
 # System Files
 .firebase/
+functions/node_modules/
