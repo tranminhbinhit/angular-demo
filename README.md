@@ -1,7 +1,7 @@
 ## 1. Chạy dự án
   ```bash
   npm start
-  npm run dev:ssr
+  npm run start:ssr  
   ```
 ## 2. Build production
   ```bash
