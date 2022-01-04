@@ -14,13 +14,13 @@
     "ng": "ng",
     "start": "ng serve --port 4004",
     "start:ssr": "ng run angular-demo:serve-ssr",
+    "serve:ssr": "node dist/angular-demo/server/main.js",
 
     "build": "ng build",
     "build:ssr": "ng build && ng run angular-demo:server",
 
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr": "node dist/angular-demo/server/main.js",
     "prerender": "ng run angular-demo:prerender"
   },
   "private": true,

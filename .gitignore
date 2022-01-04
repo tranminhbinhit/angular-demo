@@ -43,4 +43,4 @@ testem.log
 
 # System Files
 .firebase/
-functions/node_modules/
+angular-demo/node_modules/

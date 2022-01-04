@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 export function app(): express.Express {
   const server = express();
 
-  const websiteFileLocation = environment.production ? 'browser' : 'dist/functions/browser';
+  const websiteFileLocation = environment.production ? 'dist/angular-demo/browser' : 'dist/angular-demo/browser';
 
   const distFolder = join(process.cwd(), websiteFileLocation);
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';

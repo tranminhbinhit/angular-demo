@@ -28,11 +28,11 @@
   global['navigator'] = win.navigator
   global['getComputedStyle'] = win.getComputedStyle;
   ```
-  Chỉnh file angular.json
+  <!-- Chỉnh file angular.json
   ```bash
   build => options => "outputPath": "dist/functions/browser",
   server => options => "outputPath": "dist/functions/server",
-  ```
+  ``` -->
   Chỉnh file server.ts
   ```bash
   const distFolder = join(process.cwd(), 'dist/functions/browser');
@@ -76,7 +76,5 @@
 
   firebase deploy --only hosting
   ```
-
-  ## 5. Universal firebase 
   
 
