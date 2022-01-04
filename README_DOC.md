@@ -11,6 +11,7 @@
   ```bash
   ng add @nguniversal/express-engine
   ```
+  Dùng universal 
 
   Bổ sung vào file server.ts các global cho browser: 
   ```javascript
@@ -52,8 +53,30 @@
   "maximumWarning": "2mb",
   "maximumError": "5mb"
   ```
-  ## 5. Public source lên firebase
+  ## 5. Public source lên firebase  
+  Hướng dẫn
   https://www.tiepphan.com/angular-trong-5-phut-deploy-angular-application-firebase-hosting/
+  
+  Universal on firebase 
+  https://fireship.io/lessons/angular-universal-firebase/
+  
   Tạo tài khoản firebase 
   https://console.firebase.google.com/project/angular-demo-72618/hosting/sites
+
+  ```bash
+  npm run build:ssr
+  npm i -g firebase-tools
+
+  firebase login (firebase logout)
+  
+  firebase init (choose host)
+    - Functions: Configure a Cloud Functions directory and its files
+    - Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+    - Hosting: Set up GitHub Action deploys
+
+  firebase deploy --only hosting
+  ```
+
+  ## 5. Universal firebase 
+  
 
