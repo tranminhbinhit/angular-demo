@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'control', component: ControlComponent},
   { path: 'products', loadChildren: () => import('./pages/product/product.module').then(m => m.ProductModule)},
   { path: 'user', loadChildren: () => import('./pages/user/user.module').then(m=>m.UserModule)},
-  { path: 'restaurants', loadChildren: () => import('./pages/restaurant/restaurant.module').then(m=>m.RestaurantModule)}
+  { path: 'restaurants', loadChildren: () => import('./pages/restaurant/restaurant.module').then(m=>m.RestaurantModule)},
+  { path: 'crypto', loadChildren: () => import('./pages/crypto/crypto.module').then(m=>m.CryptoModule)}
   //{ path: "", redirectTo: "login", pathMatch: "full" },
   //{ path: '**', redirectTo: "login", pathMatch: "full" }
 ];

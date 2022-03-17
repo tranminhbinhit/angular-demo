@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <td>High</td>
+      <td>Low</td>
+      <td>Close</td>
+      <td>Open</td>
+      <td>Volume</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of priceChart">
+      <th scope="row">{{item.timestamp}}</th>
+      <td>{{item.open}}</td>
+      <td>{{item.high}}</td>
+      <td>{{item.low}}</td>
+      <td>{{item.close}}</td>
+      <td>{{item.volume}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -87,9 +87,9 @@ export function getDate(offset = 0) {
 //   return moment(date, COMMON_CONST.FormatDate).toDate();
 // }
 
-// export function parseDateTime(date) {
-//   return moment(date, COMMON_CONST.FormatDateTimeServer).toDate();
-// }
+export function parseDateTime(date:any) {
+  return moment(date, COMMON_CONST.FormatDateTimeServer).toDate();
+}
 
 // export function formatDateServer(date) {
 //   return moment(date).format(COMMON_CONST.FormatDateServer);
@@ -98,13 +98,13 @@ export function getDate(offset = 0) {
 export function formatDateTimeServer(date : Date) {
   return moment(date).format(COMMON_CONST.FormatDateTimeServer);
 }
-// export function formatDate(date) {
-//   return moment(date).format(COMMON_CONST.FormatDate);
-// }
+export function formatDate(date:any) {
+  return moment(date).format(COMMON_CONST.FormatDate);
+}
 
-// export function formatDateTime(date) {
-//   return moment(date).format(COMMON_CONST.FormatDateTime);
-// }
+export function formatDateTime(date:any) {
+  return moment(date).format(COMMON_CONST.FormatDateTime);
+}
 
 // export function formatTime(date) {
 //   return moment(date).format(COMMON_CONST.FormatTime);
