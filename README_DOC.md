@@ -78,3 +78,23 @@
   ```
   
 
+ ## 6. Cấu hình public firebase
+Deploy firebase 
+
+0. Cài đặt firebase cli
+npm install -g firebase-tools
+
+1. Đăng nhập firebase
+firebase login
+
+2. Cấu hình build lên firebase
+firebase init
+
+3. Xem danh sách project trên firebase account
+firebase projects:list
+
+4. Sử dụng project trên firebase account để deploy
+firebase use nodejs-ebdf6
+
+5. Deploy lên firebase
+firebase deploy --only hosting
