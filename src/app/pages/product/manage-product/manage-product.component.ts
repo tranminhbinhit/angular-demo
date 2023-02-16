@@ -1,3 +1,4 @@
+import { ContentObserver, ObserversModule } from '@angular/cdk/observers';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manage-product.component.scss']
 })
 export class ManageProductComponent implements OnInit {
+  constructor(
 
-  constructor() { }
+  ) { }
 
   ngOnInit(): void {
   }
+  fontRed: string = "red";
+
 
 }

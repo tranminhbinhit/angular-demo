@@ -17,6 +17,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 import { RestaurantsComponent } from './pages/restaurant/restaurants/restaurants.component';
 import { ControlComponent } from './pages/control/control.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { ComponentModule } from './components/component.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,10 @@ import { MatSliderModule } from '@angular/material/slider';
     //Notification
     SimpleNotificationsModule.forRoot(),
     // material
-    MatSliderModule
+    MatSliderModule,
+    ComponentModule
+  ],
+  exports:[
   ],
   providers: [
     AuthGuard

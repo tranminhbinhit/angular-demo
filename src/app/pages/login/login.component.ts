@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserModel } from 'src/app/models/auth/user.model';
 import { AuthService } from 'src/app/services/auth.service';
@@ -12,7 +12,7 @@ import { isEmptyObject, isSuccess } from 'src/app/utils/utils';
 })
 export class LoginComponent implements OnInit {
 
-  userName: string = 'demo';
+  userName: string  = 'demo';
   password: string = '123456';
   constructor(private authService : AuthService, private router: Router, private commonService: CommonService) { }
 
