@@ -23,6 +23,10 @@ export class RestaurantDetailComponent implements OnInit {
       this.id = +param['id'];
       this.loadRestaurantDetail();
     })
+
+    const routeParams = this.route.snapshot.paramMap;
+    const productIdFromRoute = Number(routeParams.get('id'));
+    console.log('This is id', productIdFromRoute);
   }
 
   loadRestaurantDetail(){

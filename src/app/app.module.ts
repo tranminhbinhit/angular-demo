@@ -8,7 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CategoryModule } from './pages/category/category.module';
 import { UserModule } from './pages/user/user.module';
 import { AuthGuard } from './auth/auth.guard';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './components/loading/loading.component';
@@ -18,8 +18,10 @@ import { RestaurantsComponent } from './pages/restaurant/restaurants/restaurants
 import { ControlComponent } from './pages/control/control.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { ComponentModule } from './components/component.module';
+import { FeedBackComponent } from './components/feedback/feedback.component';
 
 @NgModule({
+  //Khai báo các component
   declarations: [
     AppComponent,
     LoginComponent,
@@ -35,6 +37,7 @@ import { ComponentModule } from './components/component.module';
     CategoryModule,
     UserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     //Notification

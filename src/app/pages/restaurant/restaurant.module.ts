@@ -18,7 +18,7 @@ import { CdnUrlPipe } from 'src/app/pipes/common.pipe';
     RouterModule.forChild([
       {path: '', component: RestaurantsComponent},
       {path: ':id', component: RestaurantDetailComponent},
-    ]),
+    ])
   ]
 })
 export class RestaurantModule { }
